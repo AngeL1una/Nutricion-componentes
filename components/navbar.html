@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo y Título -->
+          <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="h-10 w-10" />
+            <a
+              href="../index.html"
+              class="ml-2 text-2xl font-semibold text-gray-800"
+              >NutriLife</a
+            >
+          </div>
+          <!-- Enlaces de escritorio -->
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="../dietas.html"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Genera tu dieta</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Licence</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center text-gray-600 hover:text-blue-600 transition"
+              >
+                Explore
+                <img src="chevron.png" class="ml-1 h-4 w-4" alt="Dropdown" />
+              </button>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-40"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Dietas</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Tutoriales</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Documentación</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Seguimiento</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Videos</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-600 hover:bg-blue-100 transition"
+                  >Nosotros</a
+                >
+              </div>
+            </div>
+            <a
+              href="#"
+              class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+              >Regístrate</a
+            >
+          </div>
+          <!-- Enlaces móviles -->
+          <div class="flex md:hidden items-center space-x-4">
+            <a
+              href="../dietas.html"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Genera tu dieta</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Nosotros</a
+            >
+            <!-- Botón de menú móvil -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Menú desplegable móvil -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg rounded-md mt-2 px-4 py-2"
+      >
+        <a href="#" class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Licence</a
+        >
+        <a href="#" class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Dietas</a
+        >
+        <a href="#" class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Tutoriales</a
+        >
+        <a
+          href="#"
+          class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Documentación</a
+        >
+        <a href="#" class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Seguimiento</a
+        >
+        <a href="#" class="block py-2 text-gray-600 hover:bg-blue-100 transition"
+          >Videos</a
+        >
+        <a
+          href="#"
+          class="block bg-blue-600 text-white py-2 rounded-md text-center hover:bg-blue-700 transition"
+          >Regístrate</a
+        >
+      </div>
+    </nav>
+
+    <div class="grid grid-cols-12 gap-4 max-w-full w-full h-screen p-6">
+
+      <div class="bg-white p-6 rounded-lg shadow-lg col-span-12 md:col-span-3 lg:col-span-2 h-full flex flex-col items-center justify-center">
+          <div class="flex justify-center">
+              <img class="w-24 h-24 rounded-full border-2 border-gray-300"
+                   src="https://www.w3schools.com/howto/img_avatar.png"
+                   alt="Foto de usuario">
+          </div>
+
+          <div class="text-center mt-4">
+              <h2 class="text-xl font-semibold">@YO</h2>
+              <p class="text-gray-600">Desarrollador Frontend</p>
+
+              <div class="mt-4">
+                  <p class="text-gray-700"><strong>Email:</strong> YO@email.com</p>
+                  <p class="text-gray-700"><strong>Teléfono:</strong> +52 123 456 7890</p>
+                  <p class="text-gray-700"><strong>Ubicación:</strong> Ciudad de México, MX</p>
+              </div>
+
+      
+          </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg col-span-12 md:col-span-9 lg:col-span-10 h-full overflow-auto">
+          <h2 class="text-2xl font-semibold mb-4">Información Adicional</h2>
+
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 1</h3>
+                  <p class="text-gray-700 mt-2"> 1.</p>
+              </div>
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 2</h3>
+                  <p class="text-gray-700 mt-2"> 2.</p>
+              </div>
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 3</h3>
+                  <p class="text-gray-700 mt-2"> 3.</p>
+              </div>
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 4</h3>
+                  <p class="text-gray-700 mt-2"> 4.</p>
+              </div>
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 5</h3>
+                  <p class="text-gray-700 mt-2"> 5.</p>
+              </div>
+              <div class="bg-gray-200 p-4 rounded-lg">
+                  <h3 class="text-lg font-medium"> 6</h3>
+                  <p class="text-gray-700 mt-2"> 6.</p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
